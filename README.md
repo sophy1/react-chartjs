@@ -10,7 +10,7 @@ rich interactive react charting components using [chart.js](http://www.chartjs.o
 * Pie chart
 * Doughnut chart
 
-[view chart examples](http://jhudson8.github.io/react-chartjs/index.html)
+[view chart examples](http://reactjs.github.io/react-chartjs/index.html)
 
 Installation
 ------------
@@ -18,11 +18,14 @@ This is a CommonJS component only (to be used with something like Webpack or Bro
 ```
 npm install --save react-chartjs
 ```
-You must also include [chart.js](https://www.npmjs.com/package/chart.js) and [React](https://www.npmjs.com/package/react) as dependencies.
+You must also include [chart.js](https://www.npmjs.com/package/chart.js) and [React](https://www.npmjs.com/package/react) as dependencies.  
+```
+npm install --save chart.js@^1.1.1 react react-dom
+```  
 
 Example Usage
 -------------
-```
+```javascript
 var LineChart = require("react-chartjs").Line;
 
 var MyComponent = React.createClass({
@@ -40,11 +43,4 @@ var MyComponent = React.createClass({
 Chart References
 ----------------
 The ```canvas``` element can be retrieved using ```getCanvas``` and the ```chartjs object``` can be retrieved using ```getChart```.
-
-
-### Other React projects that may interest you
-
-* [jhudson8/react-mixin-manager](https://github.com/jhudson8/react-mixin-manager)
-* [jhudson8/react-backbone](https://github.com/jhudson8/react-backbone)
-* [jhudson8/react-events](https://github.com/jhudson8/react-events)
 
